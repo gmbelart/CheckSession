@@ -9,8 +9,8 @@ Example
 <pre>
 <code>
 require 'CheckSession.php';
-`session_start()`;
-`date_default_timezone_set('Asia/Jakarta')`;
+session_start();
+date_default_timezone_set('Asia/Jakarta');
 
 // remove a session that not active more than 2 minutes
 CheckSession::removeSession(2);
@@ -26,7 +26,7 @@ if(CheckSession::isFull(2)){
 // user is login? 
 if(isset($_SESSION['user'])){
     echo 'User has login';
-    echo '`<br />`';
+    echo '<br />';
     echo CheckSession::countSession();
-    echo '`<br />`';
+    echo '<br />';
 }</code></pre>
